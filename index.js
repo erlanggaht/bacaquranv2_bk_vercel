@@ -1,11 +1,9 @@
 import express from "express";
 import cors from 'cors'
 import bodyParser from "body-parser";
-import dotenv from 'dotenv'
 import router from "./router/router.js";
 import { dbs_konek } from "./database/config.js";
 
-dotenv.config()
 const app = express()
 const port = process.env.PORT || 3004
 
